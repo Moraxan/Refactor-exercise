@@ -10,6 +10,7 @@ namespace CalculatorRPN
             DoubleStack stack = new DoubleStack();
             while (true)
             {
+                //This should be a switch I can rewrite the switch to use clean code later. 
                 if (stack.Depth == 0)
                 {
                     Console.WriteLine("Commands: q c + - * / number");
@@ -61,7 +62,7 @@ namespace CalculatorRPN
             }
         }
     }
-
+//This could be lifted out and renamed. What does Push, Pop and Peek do?
     class DoubleStack
     {
         private double[] data;
@@ -103,7 +104,7 @@ namespace CalculatorRPN
                 return 0;
             }
         }
-
+//Why does the data need to be represented as a string?
         public override string ToString()
         {
             StringBuilder b = new StringBuilder();
