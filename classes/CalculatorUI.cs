@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CalculatorRPN
-{
-    public class UserInput : IUserInput
+using CalculatorRPN;
+    public class CalculatorUI : ICalculatorUI
     {
         public void DisplayOutput(string output)
         {
@@ -16,9 +15,9 @@ namespace CalculatorRPN
         {
             try
             {
-                string input = Console.ReadLine();
+                string? input = Console.ReadLine();
 
-                if (input == "+" || input == "-" || input == "/" || input == "*" || input == "q" || input == "c")
+                if (input == "+" || input == "-" || input == "/" || input == "*" || input == "q" || input == "c"|| double.TryParse(input, out _))
                 {
                     return input;
                 }
@@ -35,4 +34,3 @@ namespace CalculatorRPN
             }
         }
     }
-}

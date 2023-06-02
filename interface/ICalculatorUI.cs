@@ -2,12 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-namespace CalculatorRPN
-{
-    public interface IUserInput
+using CalculatorRPN;
+    public interface ICalculatorUI
     {
         string GetInput();
         void DisplayOutput(string output);
     }
-}
+

@@ -2,9 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-namespace CalculatorRPN
-{
+using CalculatorRPN;
     public interface ICalculator
     {
         void Push(double value);
@@ -17,4 +15,3 @@ namespace CalculatorRPN
         void Clear();
     }
 
-}

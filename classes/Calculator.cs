@@ -2,9 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-namespace CalculatorRPN
-{
+using CalculatorRPN;
     public class Calculator : ICalculator
     {
          private Stack<double> stack;
@@ -63,4 +61,3 @@ namespace CalculatorRPN
                     stack.Push(stack.Pop() - secondOperand);
         }
     }
-}
