@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X94cbLIQ4Pa76vMJKlX4H/tySzSF+cgQ9Vb2vr3yWoXRtNeJ02sT7deddGaThXqJswxmbjLEe+yzDp8DCsVE8A==",
+  "dgSpecHash": "wgbNXlx/u8Bikv55Dt9cqjlMKQuGYuJLxOqhpVEIuF3njYm2x1Yyp6Q8SOwpVYeND8fp3Wh8rbDCqUolLhEd3w==",
   "success": true,
-  "projectFilePath": "/home/calletrumma/source/Test1_clean_code/Test1_clean_code.csproj",
+  "projectFilePath": "/home/calletrumma/source/Refactor-exercise/Test1_clean_code.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
