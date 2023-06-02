@@ -7,7 +7,8 @@ namespace CalculatorRPN
     {
         static void Main(string[] args)
         {
-            DoubleStack stack = new DoubleStack();
+            CalculatorStack stack = new CalculatorStack();
+            //I shouldn't need the while loop.
             while (true)
             {
                 //This should be a switch I can rewrite the switch to use clean code later. 
@@ -38,13 +39,13 @@ namespace CalculatorRPN
                 }
                 else if (command == '-')
                 {
-                    double d = stack.Pop();
-                    stack.Push(stack.Pop() - d);
+                    double secondOperand = stack.Pop();
+                    stack.Push(stack.Pop() - secondOperand);
                 }
                 else if (command == '/')
                 {
-                    double d = stack.Pop();
-                    stack.Push(stack.Pop() / d);
+                    double secondOperand = stack.Pop();
+                    stack.Push(stack.Pop() / secondOperand);
                 }
                 else if (command == 'c')
                 {
@@ -63,12 +64,12 @@ namespace CalculatorRPN
         }
     }
 //This could be lifted out and renamed. What does Push, Pop and Peek do?
-    class DoubleStack
+    class CalculatorStack
     {
         private double[] data;
         public int Depth { get; private set; }
 
-        public DoubleStack()
+        public void NewStack()
         {
             data = new double[1000];
             Depth = 0;
@@ -118,9 +119,9 @@ namespace CalculatorRPN
             }
         }
 
-        public void Clear()
-        {
-            Depth = 0;
-        }
+        // public void Clear()
+        // {
+        //     Depth = 0;
+        // }
     }
 }
